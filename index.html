@@ -4,26 +4,73 @@
       body {
         font-family: arial;
       }
+      .rborder {
+        border-right: 1px solid black;
+      }
+      td.uborder {
+        border-top: 1px solid lightgray;
+      }
+      a.nav {
+        margin-right: 25px;
+        margin-left: 25px;
+      }
     </style>
   </head>
   <body>
     <h1>100+ Drosophila genomes project</h1>
-    <p>Goals, progress, updates...</p>
+    <p>
+      <a class="nav" href="#paper">Paper</a> | <a class="nav" href="#data">Data</a> | <a class="nav" href="#software">Software</a>
+    </p>
+    <hr/>
+    <p>
+      Goals, progress, updates...
+    </p>
+    <p>
+      <a href="http://github.com/flyseq">GitHub</a>
+    </p>
 
+    <a name="paper"></a>
+    <h2>Paper</h2>
+    <p>
+      <a href="">Kim et al.</a>
+    </p>
+    <p>
+      <a href="">Supplementary Data, Tables, and Figures</a>
+    </p>
+
+    <a name="data"></a>
     <h2>Data</h2>
     <p>
-      NCBI Project: <a href="">XXXXXXXXX</a>
+      NCBI Project: <a href="">PRJXXXXXX</a>
     </p>
-    <p>
-      SRA List: <a href="">XXXXXXXXX</a>
-    </p>
-    <p>
-      Genomes: <a href="">XXXXXXXXX</a>
-    </p>
-    <p>
-      Raw data (FAST5)?: <a href="">XXXXXXXXX</a>
-    </p>
+    <table border=0 cellpadding=10 cellspacing=0>
+      <tr>
+        <th class='rborder'>Species</th>
+        <th class='rborder'>Strain</th>
+        <th class='rborder'>Source</th>
+        <th class='rborder'>Assembly</th>
+        <th class='rborder'>Sequence</th>
+        <th>Raw data</th>
+      </tr>
+      <tr>
+        <td class='rborder uborder'><i>Drosophila melanogaster</i></td>
+        <td class='rborder uborder'>ISO-1</td>
+        <td class='rborder uborder'>The lab</td>
+        <td class='rborder uborder'><a href="">GCA_XXXXXX</a></td>
+        <td class='rborder uborder'><a href="">SRRXXXXXX</a></td>
+        <td class='uborder'><a href="">XXXXXXXXX</a></td>
+      </tr>
+      <tr>
+        <td class='rborder uborder'><i>Drosophila simulans</i></td>
+        <td class='rborder uborder'>SIM1</td>
+        <td class='rborder uborder'>The lab</td>
+        <td class='rborder uborder'><a href="">GCA_XXXXXX</a></td>
+        <td class='rborder uborder'><a href="">SRRXXXXXX</a></td>
+        <td class='uborder'><a href="">XXXXXXXXX</a></td>
+      </tr>
+    </table>
 
+    <a name="software"></a>
     <h2>Software</h2>
     <p>
       <a href="http://github.com/bernard-kim/100DrosophilaWorkflows">100 Drosophila Workflows (GitHub)</a>
